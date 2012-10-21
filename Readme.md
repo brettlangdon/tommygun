@@ -1,7 +1,48 @@
-
 # tommygun
 
-  HTTP Benchmarking Tool
+HTTP Benchmarking Tool written in Node.JS.
+
+## Configuration
+
+Tommygun uses ini files to specify what urls and settings to test. Each section corresponds to the url to test and
+each property corresponds to specific settings for that given url. If the property occurs outside of a section then
+tommygun those settings are used by tommygun.
+
+### Example
+```ini
+;this setting is used by tommygun globally
+random = false
+
+[localhost]
+port = 8000
+num = 5
+
+[localhost/submit]
+port = 8000
+data = this is a test
+method = post
+num = 2
+
+[www.google.com]
+
+[www.github.com]
+```
+
+## Usage
+
+### Get Help
+```bash
+tommygun --help
+```
+
+### Simple Usage
+```bash
+tommygun config.ini
+```
+
+## Name
+
+The name for tommygun came from a play off of the name for http://www.github.com/newsapps/beeswithmachineguns
 
 ## License 
 
