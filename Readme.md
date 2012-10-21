@@ -2,6 +2,19 @@
 
 HTTP Benchmarking Tool written in Node.JS.
 
+## Installation
+### NPM
+```bash
+npm install -g tommygun
+```
+
+### Git
+```bash
+git clone git://github.com/brettlangdon/tommygun.git
+cd ./tommygun
+npm install -g
+```
+
 ## Configuration
 
 Tommygun uses ini files to specify what urls and settings to test. Each section corresponds to the url to test and
