@@ -1,0 +1,23 @@
+{
+  "name": "tommygun",
+  "version": "0.0.1",
+  "description": "HTTP Benchmarking Tool",
+  "keywords": [
+    "http",
+    "benchmark"
+  ],
+  "author": "Brett Langdon <brett@blangdon.com>",
+  "dependencies": {
+    "optimist": "*",
+    "gauss": "*",
+    "xtend": "*",
+    "iniparser": "*",
+    "async": "*"
+  },
+  "devDependencies": {
+  },
+  "main": "lib/index.js",
+  "bin": {
+    "tommygun": "bin/tommygun"
+  }
+}

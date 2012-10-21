@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+try{
+  require('tommygun');
+} catch(e){
+  require('../lib/index.js');
+}
