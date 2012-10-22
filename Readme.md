@@ -18,14 +18,10 @@ npm install -g
 ## Configuration
 
 Tommygun uses ini files to specify what urls and settings to test. Each section corresponds to the url to test and
-each property corresponds to specific settings for that given url. If the property occurs outside of a section then
-tommygun those settings are used by tommygun.
+each property corresponds to specific settings for that given url.
 
 ### Example
 ```ini
-;this setting is used by tommygun globally
-random = false
-
 [localhost]
 port = 8000
 num = 5
@@ -46,6 +42,17 @@ num = 2
 ### Get Help
 ```bash
 tommygun --help
+Usage: tommygun [config] [config]...
+
+Options:
+  -c, --concurrency  Number of Concurrent Clients to Use          [default: 1]
+  -n, --requests     Total Number Of Requests To Make           
+  -r, --random       Whether Or Not To Randomize The Url Order    [boolean]  [default: false]
+  -k, --keepalive    Whether Or Not To Enable Keep Alive Support  [boolean]  [default: false]
+  -l, --log          Log File To Write All Request Data To        [string]
+  -s, --stats        Whether or Not Print Result Stats            [boolean]  [default: true]
+  -q, --quiet        Whether Or Not To Silence stdout             [boolean]  [default: false]
+  -h, --help         Show This Help Text                          [boolean]
 ```
 
 ### Simple Usage
