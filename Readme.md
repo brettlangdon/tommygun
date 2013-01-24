@@ -20,6 +20,8 @@ npm install -g
 Tommygun uses ini files to specify what urls and settings to test. Each section corresponds to the url to test and
 each property corresponds to specific settings for that given url.
 
+The options available for each url are the same as those available to `http.request` (http://nodejs.org/api/http.html#http_http_request_options_callback).
+
 ### Example
 ```ini
 [localhost]
@@ -46,7 +48,7 @@ Usage: tommygun [config] [config]...
 
 Options:
   -c, --concurrency  Number of Concurrent Clients to Use          [default: 1]
-  -n, --requests     Total Number Of Requests To Make           
+  -n, --requests     Total Number Of Requests To Make
   -r, --random       Whether Or Not To Randomize The Url Order    [boolean]  [default: false]
   -k, --keepalive    Whether Or Not To Enable Keep Alive Support  [boolean]  [default: false]
   -l, --log          Log File To Write All Request Data To        [string]
@@ -99,7 +101,7 @@ Results For: http://localhost/
 
 The name for tommygun came from a play off of the name for http://www.github.com/newsapps/beeswithmachineguns
 
-## License 
+## License
 
 (The MIT License)
 
