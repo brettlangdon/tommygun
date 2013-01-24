@@ -22,6 +22,8 @@ each property corresponds to specific settings for that given url.
 
 The options available for each url are the same as those available to `http.request` (http://nodejs.org/api/http.html#http_http_request_options_callback).
 
+When using the configuration setting `headers` you *must* provide the value as a valid JSON string.
+
 ### Example
 ```ini
 [localhost]
@@ -31,6 +33,7 @@ num = 5
 [localhost/submit]
 port = 8000
 data = this is a test
+headers = {"some": "values"}
 method = post
 num = 2
 
